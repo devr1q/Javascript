@@ -7,8 +7,8 @@
     <title>Somando números</title>
     <style>
         body {
-           background-color: cyan;
-           color: darkorchid;
+            background-color: cyan;
+            color: darkorchid;
             font: normal 20pt arial;
             text-align: center;
             margin-top: 230px;
@@ -16,6 +16,11 @@
         input {
             font: normal 20pt arial;
             width: 160px;
+        }
+        #val:hover{
+            background-color: rgba(170, 170, 170, 0.85);
+            border: none;
+            border: 1px solid rgba(50, 50, 50, 0.85);
         }
         div#res {
             margin-top: 25px;
@@ -27,8 +32,9 @@
     <h1>Riquinho inteligente:</h1>
     <input type="number" name="txtn1" id="txtn1"> -
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="aleson" onclick="subtração()">
+    <input type="button" id="val" value="calcular" onclick="subtração()">
     <div id="res">Resultado</div>
+
     <script>
         function subtração() {
             var tn1 = window.document.getElementById('txtn1')
