@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nascionalidade</title>
+</head>
+<body>
+    <h1>Onde você nasceu?</h1>
+    <label for="ipais">Nascionalidade: </label>
+    <input type="text" name="ipais" id="ipais">
+    <input type="button" value="Verificar" onclick="escanear()">
+    <div id="resp"></div>
+
+    <script>
+        function escanear() {
+            let = contry = document.getElementById('ipais')
+            let = lug = contry.value
+            let = resp = document.querySelector('div#resp')
+            if (lug == 'Brasileiro' || 'brasileiro') {
+                resp.innerHTML += `<p>Bem-vindo ao MELHOR país!</p>`
+            } else {
+                resp.innerHTML = `<p>Estrangeiro, volte ao seu país!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
